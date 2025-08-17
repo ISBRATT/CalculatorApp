@@ -58,7 +58,7 @@
             this.Num1.TabIndex = 1;
             this.Num1.Text = "1";
             this.Num1.UseVisualStyleBackColor = false;
-            this.Num1.Click += new System.EventHandler(this.Num1_Click);
+            this.Num1.Click += new System.EventHandler(this.Num_Click);
             // 
             // Num2
             // 
@@ -70,7 +70,7 @@
             this.Num2.TabIndex = 2;
             this.Num2.Text = "2";
             this.Num2.UseVisualStyleBackColor = false;
-            this.Num2.Click += new System.EventHandler(this.Num2_Click);
+            this.Num2.Click += new System.EventHandler(this.Num_Click);
             // 
             // Num3
             // 
@@ -82,7 +82,7 @@
             this.Num3.TabIndex = 3;
             this.Num3.Text = "3";
             this.Num3.UseVisualStyleBackColor = false;
-            this.Num3.Click += new System.EventHandler(this.Num3_Click);
+            this.Num3.Click += new System.EventHandler(this.Num_Click);
             // 
             // Num4
             // 
@@ -94,7 +94,7 @@
             this.Num4.TabIndex = 4;
             this.Num4.Text = "4";
             this.Num4.UseVisualStyleBackColor = false;
-            this.Num4.Click += new System.EventHandler(this.Num4_Click);
+            this.Num4.Click += new System.EventHandler(this.Num_Click);
             // 
             // Num5
             // 
@@ -106,7 +106,7 @@
             this.Num5.TabIndex = 5;
             this.Num5.Text = "5";
             this.Num5.UseVisualStyleBackColor = false;
-            this.Num5.Click += new System.EventHandler(this.Num5_Click);
+            this.Num5.Click += new System.EventHandler(this.Num_Click);
             // 
             // Num6
             // 
@@ -118,7 +118,7 @@
             this.Num6.TabIndex = 6;
             this.Num6.Text = "6";
             this.Num6.UseVisualStyleBackColor = false;
-            this.Num6.Click += new System.EventHandler(this.Num6_Click);
+            this.Num6.Click += new System.EventHandler(this.Num_Click);
             // 
             // Num7
             // 
@@ -130,7 +130,7 @@
             this.Num7.TabIndex = 7;
             this.Num7.Text = "7";
             this.Num7.UseVisualStyleBackColor = false;
-            this.Num7.Click += new System.EventHandler(this.Num7_Click);
+            this.Num7.Click += new System.EventHandler(this.Num_Click);
             // 
             // Num8
             // 
@@ -142,7 +142,7 @@
             this.Num8.TabIndex = 8;
             this.Num8.Text = "8";
             this.Num8.UseVisualStyleBackColor = false;
-            this.Num8.Click += new System.EventHandler(this.Num8_Click);
+            this.Num8.Click += new System.EventHandler(this.Num_Click);
             // 
             // Num9
             // 
@@ -154,7 +154,7 @@
             this.Num9.TabIndex = 9;
             this.Num9.Text = "9";
             this.Num9.UseVisualStyleBackColor = false;
-            this.Num9.Click += new System.EventHandler(this.Num9_Click);
+            this.Num9.Click += new System.EventHandler(this.Num_Click);
             // 
             // ZeroButton
             // 
@@ -166,7 +166,7 @@
             this.ZeroButton.TabIndex = 10;
             this.ZeroButton.Text = "0";
             this.ZeroButton.UseVisualStyleBackColor = false;
-            this.ZeroButton.Click += new System.EventHandler(this.ZeroButton_Click);
+            this.ZeroButton.Click += new System.EventHandler(this.Num_Click);
             // 
             // ResultsBox
             // 
@@ -287,7 +287,7 @@
             this.Controls.Add(this.Num2);
             this.Controls.Add(this.Num1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CalculatorApp";
             this.ResumeLayout(false);
 
         }

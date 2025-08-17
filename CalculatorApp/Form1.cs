@@ -1,94 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics.Eventing.Reader;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Collections.Specialized.BitVector32;
 
 namespace CalculatorApp
 {
     public partial class Form1 : Form
     {
-        string first = "";
-        string second = "";
+        string first = string.Empty;
+        string second = string.Empty;
         char function;
         double result = 0.0;
-        string userInput = "";
+        string userInput = string.Empty;
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Num1_Click(object sender, EventArgs e)
-        {
-            ResultsBox.Text = "";
-            userInput += "1";
-            ResultsBox.Text += userInput;
-        }
-
-        private void Num2_Click(object sender, EventArgs e)
-        {
-            ResultsBox.Text = "";
-            userInput += "2";
-            ResultsBox.Text += userInput;
-        }
-
-        private void Num3_Click(object sender, EventArgs e)
-        {
-            ResultsBox.Text = "";
-            userInput += "3";
-            ResultsBox.Text += userInput;
-        }
-
-        private void Num4_Click(object sender, EventArgs e)
-        {
-            ResultsBox.Text = "";
-            userInput += "4";
-            ResultsBox.Text += userInput;
-        }
-
-        private void Num5_Click(object sender, EventArgs e)
-        {
-            ResultsBox.Text = "";
-            userInput += "5";
-            ResultsBox.Text += userInput;
-        }
-
-        private void Num6_Click(object sender, EventArgs e)
-        {
-            ResultsBox.Text = "";
-            userInput += "6";
-            ResultsBox.Text += userInput;
-        }
-        private void Num7_Click(object sender, EventArgs e)
-        {
-            ResultsBox.Text = "";
-            userInput += "7";
-            ResultsBox.Text += userInput;
-        }
-
-        private void Num8_Click(object sender, EventArgs e)
-        {
-            ResultsBox.Text = "";
-            userInput += "8";
-            ResultsBox.Text += userInput;
-        }
-
-        private void ZeroButton_Click(object sender, EventArgs e)
-        {
-            ResultsBox.Text = "";
-            userInput += "0";
-            ResultsBox.Text += userInput;
-        }
-
         private void DecimalButton_Click(object sender, EventArgs e)
         {
-            ResultsBox.Text += ".";
+            ResultsBox.Text = "";
+            if(userInput == string.Empty)
+            {
+                userInput = "0.";
+            }
+            else
+            {
+                userInput += ".";
+            }
+            ResultsBox.Text += userInput;
         }
 
         private void EqualButton_Click(object sender, EventArgs e)
@@ -171,10 +109,19 @@ namespace CalculatorApp
             userInput = "";
         }
 
-        private void Num9_Click(object sender, EventArgs e)
+        private void Num_Click(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            if (button != null) 
+            {
+                SetNumberValue(button.Text);
+            }
+        }
+
+        private void SetNumberValue(string number)
         {
             ResultsBox.Text = "";
-            userInput += "9";
+            userInput += number;
             ResultsBox.Text += userInput;
         }
     }
